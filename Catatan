@@ -1,0 +1,73 @@
+let a = -10
+    b = -10
+    c = -1
+
+if( a > 0 || b > 0 || c > 0 ) {
+    console.log('ada yang positif');
+} else {
+    console.log('gak ada yang positif');
+}
+
+console.log('==================================');
+
+let d = undefined;
+let e ;
+let f = null
+let g = ''
+console.log('d',d,typeof d);
+console.log('e',e,typeof e);
+console.log('f',f,typeof f);
+console.log('g',g,typeof g);
+
+console.log('===========================');
+
+let variableUndefined = undefined;
+let variableNull = null;
+let variableKosong = '';
+if(variableUndefined){
+    console.log('variable tidak Undefined', variableUndefined);
+} else{
+    console.log('variable undefined');
+}
+if(variableNull){
+    console.log('variable tidak Null', variableNull);
+} else{
+    console.log('variable null');
+}
+if(variableKosong){
+    console.log('variable tidak kosong', variableKosong);
+} else{
+    console.log('variable kosong');
+}
+
+console.log('===========================');
+
+const hasilA = variableUndefined ? 'variable tidak undefined' : 'variable Undefined'
+const hasilB = variableNull ? 'variable tidak Null' : 'variable Null'
+console.log(hasilA);
+console.log(hasilB);
+
+console.log('===========================');
+
+h = 1;
+let hasil = h > 0 ? (h % 3 == 0 ? 'genap' : 'ganjil') :  'h lebih kacil daripada 0';
+console.log(hasil);
+
+if( h > 0){
+    if (h % 2 == 0){
+        hasil = 'Genap';
+    } else {
+        hasil = 'ganjil';
+    }
+} else {
+    hasil = 'h lebih kecil daripada 0'
+}
+console.log(hasil);
+
+console.log('===========================');
+
+let nilai = 10;
+let hasil1 = (nilai % 5 == 0 && 'genap') ||'Ganjil';
+console.log(hasil1);
+let hasil2 = (nilai / 2 == 5 && 'Benar') || 'salah';
+console.log(hasil2);

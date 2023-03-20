@@ -1,12 +1,11 @@
-for (let i = 1; i <= 1000; i++){
-    console.log('angka', i);
-    if (i % 3 == 0){
+for (let i = 0; i <= 1000; i++){
+    if(i % 3 === 0 && i % 5 === 0){
+        console.log('angka',i,'fizzbuzz');
+    } else if (i % 3 === 0) {
         console.log('angka', i, 'fizz');
-    } 
-    if (i % 5 == 0){
+    } else if (i % 5 === 0) {
         console.log('angka', i, 'buzz');
+    } else {
+        console.log('angka', i);
     }
-   if (i % 3 === 0 && i % 5 === 0) {
-    console.log('angka', i, 'fizzbuzz');
-  }
 }
